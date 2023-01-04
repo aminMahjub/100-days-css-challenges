@@ -9,13 +9,17 @@
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
-  background: #fff;
-  color: #333;
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  background: #43389f;
+  background: -webkit-linear-gradient(bottom left, #43389f 0%, #4ec6ca 100%);
+  background: -moz-linear-gradient(bottom left, #43389f 0%, #4ec6ca 100%);
+  background: -o-linear-gradient(bottom left, #43389f 0%, #4ec6ca 100%);
+  background: linear-gradient(to top right, #43389f 0%, #4ec6ca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43389F', endColorstr='#4ec6ca',GradientType=1 );
+  font-family: "Courier New", "Courier", sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .center {
@@ -23,5 +27,64 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background-color: ;
+  text-align: center;
+}
+
+.one-hundred-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.number-one {
+    position: relative;
+    width: 1.25rem;
+    height: 5.5rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+.edge-shape {
+    position: absolute;
+    width: 1.2rem;
+    height: 2.2rem;
+    border-radius: inherit;
+    background-color: inherit;
+    transform: rotate(55deg);
+    top: -1px;
+    right: 17px;
+    box-shadow: inset 4px 8px 16px 0 rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+.number-zero {
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color: transparent;
+    border: 1.3rem solid #fff;
+    border-radius: 50%;
+    margin-left: -0.8rem;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+.number-zero:last-of-type {
+    z-index: -1;
+}
+
+.days-text {
+    margin: 2rem auto 2.2rem;
+    font-weight: 600;
+    font-size: 4.4rem;
+    line-height: 0.2rem;
+    color: #fff;
+}
+
+.css-text {
+    font-size: 1.3rem;
+    line-height: 0.2rem;
+    font-weight: 700;
+    color: #fff;
 }
